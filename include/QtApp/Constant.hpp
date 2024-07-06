@@ -10,9 +10,11 @@ namespace qta {
         QTA_FAILURE = 1
     };
 
-    static constexpr uint32_t DEFAULT_WIDTH = 1280;
-    static constexpr uint32_t DEFAULT_HEIGHT = 720;
+    static constexpr int DEFAULT_WIDTH = 1280;
+    static constexpr int DEFAULT_HEIGHT = 720;
 
-    static constexpr const std::string_view DEFAULT_TITLE = "QtApp";
+    static const std::string WINDOW_TITLE = "QtAppSandbox";
+
+    static constexpr const std::string_view DEFAULT_PAGE_NAME = "Default page name";
 
 } // namespace qta

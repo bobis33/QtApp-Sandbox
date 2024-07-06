@@ -1,0 +1,19 @@
+QMainWindow {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+QPushButton, QToolButton, QMenu, QMenu::item {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+QPushButton:hover, QToolButton:hover, QMenu::item:selected {
+    background-color: #d0d0d0;
+    color: #000000;
+}
+
+QPushButton:pressed, QToolButton:pressed, QMenu::item:pressed {
+    background-color: #b0b0b0;
+    color: #000000;
+}

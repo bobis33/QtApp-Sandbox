@@ -2,8 +2,8 @@
 
 #include <iostream>
 
-#include <QString>
 #include <QFile>
+#include <QString>
 #include <QTextStream>
 
 namespace qta {

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../assets/icons/settings.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>../assets/icons/qt.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>../style/dark_theme.qss</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>../style/light_theme.qss</file>
+    </qresource>
+</RCC>

@@ -1,5 +1,5 @@
-name: qtsandbox
-run-name: ${{github.actor}} qtsandbox
+name: Build
+run-name: ${{github.actor}} - ${{github.workflow}}
 on:
   push:
     branches:
@@ -19,7 +19,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt update -y
-          sudo apt install -y qtbase5-dev
+          sudo apt install -y qt6-base-dev libgl1-mesa-dev
 
       - name: Build
         run: ./build.sh build
