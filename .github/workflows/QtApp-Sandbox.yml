@@ -1,0 +1,32 @@
+name: qtsandbox
+run-name: ${{github.actor}} qtsandbox
+on:
+  push:
+    branches:
+      - "**"
+
+env:
+  EXECUTABLE: "qtsandbox"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update -y
+          sudo apt install -y qtbase5-dev
+
+      - name: Build
+        run: ./build.sh build
+
+      - name: Check binary
+        run: |
+          if [[ ! -x "./${EXECUTABLE}" ]]; then
+          echo "Error: Binary ${EXECUTABLE} not found."
+          exit 1
+          fi

@@ -1,0 +1,16 @@
+.doxygen/*
+.idea/*
+.git/*
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+cmake-build-debug/*
+build/*
+
+/plugins/*
+
+qtsandbox
