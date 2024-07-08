@@ -19,7 +19,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt update -y
-          sudo apt install -y qt6-base-dev libgl1-mesa-dev
+          sudo apt install -y qt6-base-dev libgl1-mesa-dev qt6-webengine-dev qt6-webengine-dev-tools libqt6webenginecore6 libqt6webenginecore6-bin
 
       - name: Build
         run: ./build.sh build

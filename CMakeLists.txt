@@ -6,7 +6,7 @@ project(qtsandbox
         VERSION 0.1.0
 )
 
-find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Widgets WebEngineWidgets WebEngineQuick REQUIRED)
 
 set(CMAKE_BUILD_TYPE Release)
 
@@ -43,6 +43,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
         Qt6::Core
         Qt6::Gui
         Qt6::Widgets
+        Qt6::WebEngineWidgets
+        Qt6::WebEngineQuick
 )
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
